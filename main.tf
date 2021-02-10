@@ -7,9 +7,9 @@ resource "azurerm_resource_group" "Terra_RG" {
 
   tags = {
     Environment      = var.EnvironmentTag
-    Usage            = var.EnvironmentUsageTag
+    Usage            = var.UsageTag
     Owner            = var.OwnerTag
-    ProvisioningDate = var.ProvisioningDateTag
+    ProvisioningDate = timestamp()
     ProvisioningMode = var.ProvisioningModeTag
   }
   lifecycle {
@@ -30,9 +30,9 @@ resource "azurerm_recovery_services_vault" "Terra_Vault" {
 
   tags = {
     Environment      = var.EnvironmentTag
-    Usage            = var.EnvironmentUsageTag
+    Usage            = var.UsageTag
     Owner            = var.OwnerTag
-    ProvisioningDate = var.ProvisioningDateTag
+    ProvisioningDate = timestamp()
     ProvisioningMode = var.ProvisioningModeTag
   }
   lifecycle {

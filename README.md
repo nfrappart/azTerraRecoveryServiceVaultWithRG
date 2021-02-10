@@ -10,7 +10,6 @@ module "RSV-test" {
     VaultSku = "Standard"
     VaultName = "RSV-VmBackup-${var.Env}-Fr"
     EnvironmentTag = var.Env
-    EnvironmentUsageTag = "${var.Env} VM Backup"
-    ProvisioningDateTag = timestamp()
+    UsageTag = "Demo" #Optional. Default value is "PoC Usage Only"
   }
 ```

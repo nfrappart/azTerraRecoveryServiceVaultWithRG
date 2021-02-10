@@ -22,19 +22,14 @@ variable "EnvironmentTag" {
   default = "Sandbox"
 }
 
-variable "EnvironmentUsageTag" {
-  type    = string
-  default = "Poc usage only"
+variable "UsageTag" {
+  type = string
+  default = "PoC usage only"
 }
 
 variable "OwnerTag" {
   type    = string
   default = "Nate"
-}
-
-variable "ProvisioningDateTag" {
-  type    = string
-  default = "Today :)"
 }
 
 variable "ProvisioningModeTag" {
