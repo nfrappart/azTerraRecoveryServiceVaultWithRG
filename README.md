@@ -5,7 +5,7 @@ Simple module to create a Resource Group
 
 ```hcl
 module "RSV-test" {
-  source = "git::ssh://git@ssh.dev.azure.com/v3/Covage-dsi-infra/iac-terraform-modules/TerraRecoveryServiceVaultWithRG"
+  source = "github.com/nfrappart/azTerraRecoveryServiceVaultWithRG?ref=v1.0.0"
     RgName = "RG-test_Nate-Fr"
     VaultSku = "Standard"
     VaultName = "RSV-VmBackup-${var.Env}-Fr"
